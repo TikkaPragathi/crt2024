@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+  
+ int a,b,c;
+ scanf("%d%d%d",&a,&b,&c);
+ if(a>b)
+ {
+     if(a>c)
+     {
+         printf("%d",a);
+     }
+     else
+     {
+     printf("%d",c);
+     }
+ }
+ else
+ if(b>c)
+ {
+     printf("%d",b);
+ }
+ else
+ {
+     printf("%d",c);
+ }
+    return 0;
+}
+
+Output:
+
+12 3 2// a is greater
+12
+
+12 13 14
+14//c is greater
+
+12 34 22
+34//b is greater
+
+12 22 55
+55// c is greater
