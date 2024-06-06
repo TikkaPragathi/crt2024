@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n,d,s=0,t;
+    scanf("%d",&n);
+    t=n;
+    while(n>0)
+    {
+        d=n%10;
+        n=n/10;
+        s=s+d*d*d;
+    }
+    if(s==t)
+        printf("Armstrong number");
+        else
+        printf("Not an Armstrong number");
+return 0;
+}
+
+Output:
+122
+Not an Armstrong number
+
+// armstrong numbers are 153,370,371,401
+
+153
+Armstrong number
