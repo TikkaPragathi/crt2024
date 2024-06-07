@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    for(i=2;i<=5;i++)
+    {
+        printf("%d\n",i);
+        if(i%2==0)
+        continue;
+        printf("Python\n");
+        printf("Java\n");
+    }
+    return 0;
+}
+
+Output:
+
+2
+3
+Python
+Java
+4
+5
+Python
+Java
