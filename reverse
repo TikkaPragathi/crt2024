@@ -1,0 +1,22 @@
+#include <stdio.h>
+ int reverse()
+{
+    int n,d,r=0;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        d=n%10;
+        n=n/10;
+        r=r*10+d;
+    }
+     return r;
+}
+int main()
+{
+    int k=reverse();
+    printf("%d",k);
+}
+
+Output:
+123
+321
