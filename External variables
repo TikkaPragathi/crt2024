@@ -1,0 +1,16 @@
+#include <stdio.h>
+int a;
+void increment()
+{
+    a++;
+  printf("%d\t",a);
+}
+int main()
+{
+    printf("%d\t",a);
+    increment();
+    increment();
+    return 0;
+}
+Output:
+0	1	2	
