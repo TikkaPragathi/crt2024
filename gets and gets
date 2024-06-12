@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    gets(str);
+    printf("%s",str);
+    return 0;
+}
+
+Output:
+ /tmp/07pszcHYfA.c:7:5: warning: implicit declaration of function 'gets'; did you mean 'fgets'? [-Wimplicit-function-declaration]
+    7 |     gets(str);
+      |     ^~~~
+      |     fgets
+/rbin/ld: /tmp/ccLtpY1Y.o: in function `main':
+07pszcHYfA.c:(.text+0x24): warning: the `gets' function is dangerous and should not be used.
+/tmp/07pszcHYfA.o
+Enter the stringjava
+java
+
+=== Code Execution Successful ===
+
+SOMETIMES IT GIS EXECUTED AND SOMECOMPILERS gets is supported
+
+fgets:
+
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    fgets(str,50,stdin);
+    printf("%s",str);
+    return 0;
+}
+Output:
+Enter the stringjava
+java
