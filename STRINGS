@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    scanf("%s",str);
+    printf("%s",str);
+    return 0;
+}
+Output:
+Enter the string
+java
+java
+
+//it does not accept white spaces so only java is print
+Enter the string
+java language
+java
