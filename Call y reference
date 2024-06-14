@@ -1,0 +1,23 @@
+#include <stdio.h>
+void swap(int *x,int *y)
+{
+    int t;
+    t=*x;
+    *x=*y;
+    *y=t;
+}
+int main() {
+    int  a,b;
+    printf("Enter two numbers");
+    scanf("%d%d",&a,&b);
+      printf("values before swapping a=%d\n",a);
+      swap(&a,&b);
+      printf("values after swapping a=%d\n",a,b);
+    return 0;
+}
+
+Output:
+Enter two numbers12
+34
+values before swapping a=12
+values after swapping a=34
