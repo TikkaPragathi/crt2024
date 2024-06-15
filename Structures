@@ -1,31 +1,44 @@
-#include <stdio.h>
+
+   #include<stdio.h>
 struct Employee
- {
-    int empno;
-    char name[40];
-    float sal,hra,da,pf,gross;
-}
-int main()
 {
-    printf("Enter employee no");
-    scanf("%d",&e.empno);
-    printf("Enter name");
-     scanf("%s",&e.empname);
-    printf("Enter basic salary");
-     scanf("%f",&e.sal);
-     e.hra=e.sal*15/100;
-     e.da=e.sal*10/100;
-    e.pf=e.sal*5/100;
-    e.gross=e.sal+e.hra+e.da;
-    e.net=e.gross-e.pf;
-    printf("Employee no".   =%d\n",e.empno);
-    printf("Name".   =%s\n",e.name);
-    printf("Basic salary".   =%.2f\n",e.sal;
-    printf("HRA".   =%.2f\n",e.hra);
-    printf("DA".   =%.2f\n",e.sal);
-    printf("PF".   =%,2f\n",e.pf);
-    printf("Gross salary".   =%,2f\n",e.gross);
-    printf("Net salary".   =%.2f\n",e.net);
-}
-    return 0;
-}
+	int empno;
+	char name[40];
+	float sal,hra,da,pf,gross,net;
+};
+   struct  Employee e;
+   int main()
+   {
+   	printf("Enter employee no");
+   	scanf("%d",&e.empno);
+   	printf("Enter name");
+   	scanf("%s",e.name);
+   	printf("Enter basic salary");
+   	scanf("%f",&e.sal);
+   	e.hra=e.sal*15/100;
+   	e.da=e.sal*10/100;
+   	e.pf=e.sal*5/100;
+   	e.gross=e.sal+e.hra+e.da;
+   	e.net=e.gross-e.pf;
+	printf("Employee no       =%d\n",e.empno);
+   	printf("Name              =%s\n",e.name);
+   	printf("Basic salary      =%.2f\n",e.sal);
+   	printf("HRA               =%.2f\n",e.hra);
+   	printf("DA                =%.2f\n",e.da);
+   	printf("PF                =%.2f\n",e.pf);
+   	printf("Gross salary      =%.2f\n",e.gross);
+   	printf("Net salary        =%.2f\n",e.net);
+   }
+
+Output:
+Enter employee no2
+Enter nameee
+Enter basic salary23
+Employee no       =2
+Name              =ee
+Basic salary      =23.00
+HRA               =3.45
+DA                =2.30
+PF                =1.15
+Gross salary      =28.75
+Net salary        =27.60
