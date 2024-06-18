@@ -1,0 +1,53 @@
+#include <stdio.h>
+  int main() {
+  int a=10,b=20,c=30;
+  if(c>b>a)
+ {
+     printf("java");
+ }
+ else
+ {
+     printf("Python");
+ }
+    return 0;
+}
+
+Output:
+Python
+
+
+#include <stdio.h>
+  int main() {
+  int a=0;
+  int r=(a==(a==1));
+  printf("%d",r);
+    return 0;
+}
+Output:
+1
+
+#include <stdio.h>
+  int main() {
+  int a=65;
+ switch(a)
+ {
+     case 90:
+     printf("z");
+     break;
+     case 65:
+     printf("A");
+     break;
+     case 'A':
+     printf("A");
+     break;
+ }
+    return 0;
+}
+
+Output:
+/tmp/l9IGZ4cHfl.c:13:6: error: duplicate case value
+   13 |      case 'A':
+      |      ^~~~
+/tmp/l9IGZ4cHfl.c:10:6: note: previously used here
+   10 |      case 65:
+      |      ^~~~
