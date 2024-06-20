@@ -1,0 +1,151 @@
+Sheela has three things in her bag. She wants to compute the area of 3 things but 3 things are in different shapes. The three things are in a square shape, rectangular shape, and circular shape respectively. Write a program to help Sheela to calculate the area of different shapes.
+
+Input Format
+
+First input: a side of a square in integer Second input: length of a rectangle in integer Third input: breadth of a rectangle in integer Fourth input: radius of a circle in float
+
+Constraints
+
+1<=side of square <=10**9 1<=length of rectangle<=10**9 1<=breadth of rectangle<=10**9 1<=radius<=10**9
+
+Output Format
+
+The first output should be the area of a square in integer The second output should be the area of a rectangle in integer The third output should be the area of a circle in float with 2 decimal places
+
+Sample Input 0
+
+5
+5
+4
+2.0    
+Sample Output 0
+
+25
+20
+12.56
+Sample Input 1
+
+10
+15
+15
+4.5
+Sample Output 1
+
+100
+225
+63.58
+Sample Input 2
+
+2
+3
+6
+5.0
+Sample Output 2
+
+4
+18
+78.50
+Submissions: 872
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+    
+More
+  
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Area {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        int a,l,b;
+8
+        float r;
+9
+        Scanner s=new Scanner(System.in);
+10
+    a=s.nextInt();
+11
+        l=s.nextInt();
+12
+        b=s.nextInt();
+13
+        r=s.nextFloat();
+14
+        int r1=(int)a*a;
+15
+        int r2=(int)l*b;
+16
+        double r3=(float)3.14*r*r;
+17
+        System.out.println(r1);
+18
+        System.out.println(r2);
+19
+         System.out.printf("%.2f",r3);
+20
+        /*Scanner s=new Scanner(System.in);
+21
+    int a,l,b;
+22
+        int sq,r;
+23
+        float c,cir;
+24
+        a=s.nextInt();
+25
+        sq=a*a;
+26
+        System.out.println(sq);
+27
+        l=s.nextInt();
+28
+        b=s.nextInt();
+29
+        r=l*b;
+30
+        System.out.println(r);
+31
+        c=s.nextFloat();
+32
+        cir=(float)3.14*c*c;
+33
+        System.out.printf("%.2f",cir);*/
+34
+​
+35
+        
+36
+    }
+37
+}
+Line: 12 Col: 10
+Run Code  Submit Code Upload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Testcase 2
+Congratulations, you passed the sample test case.
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+5
+5
+4
+2.0	
+Your Output (stdout)
+25
+20
+12.56
+Expected Output
+25
+20
+12.56
