@@ -1,0 +1,81 @@
+class Test
+{
+public static void main(String args[])
+{
+System.out.println("Java");
+System.out.println("python");
+}
+}
+Output:
+mini@Ts-MacBook-Air Documents % javac Test.java
+mini@Ts-MacBook-Air Documents % java Test      
+45.76%   
+
+
+class Addition
+{
+public static void main(String args[])
+{
+	int a,b,c;
+	a=75;
+	b=82;
+	c=a+b;
+System.out.println(c);
+System.out.println(“Sum=“+c);
+System.out.println(“Value of a=“+a+”Value of b=“ +b+” Sum=“+c);
+}
+}
+
+
+
+
+//ADDITION
+class Addition
+{
+public static void main(String args[])
+{
+	int a,b,c;
+a=Integer.parseInt(args[0]);
+b=Integer.parseInt(args[1]);
+c=a+b;
+System.out.println(c);
+}
+}
+
+
+
+import java.util.*;
+class Addition
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+	int a,b,c;
+a=s.nextInt();
+b=s.nextInt();
+c=a+b;
+System.out.println(c);
+}
+}
+Output:
+12
+4
+16(12+4)
+
+//to read and print square root of given number
+import java.util.*;
+class SqRoot
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+	int a;
+a=s.nextInt();
+Double b=Math.sqrt(a);
+System.out.println(b);
+}
+}
+
+Output:
+16
+4.0
