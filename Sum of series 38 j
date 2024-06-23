@@ -1,0 +1,42 @@
+Write a Python program to find the sum of the series 2 +22 + 222 + 2222 + .. n terms
+
+Input Format
+
+Line 1:
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Sample Input 0
+
+5
+Sample Output 0
+
+24690
+Sample Input 1
+
+7
+Sample Output 1
+
+2469134
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+       int n, sum = 0, temp = 2;
+        n=s.nextInt();
+    for(int i = 1; i <= n; i++) {
+ sum +=temp;
+ temp =temp * 10 + 2;
+}
+System.out.println( sum);
+
+    }
+}
