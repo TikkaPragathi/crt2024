@@ -1,0 +1,18 @@
+import java.util.*;
+class  Comp
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String s1=s.next();
+String s2=s.next();
+int r=s1.compareTo(s2);
+System.out.println(r);
+}
+}
+Output:
+mini@Ts-MacBook-Air javacrt % javac Comp.java
+mini@Ts-MacBook-Air javacrt % java Comp
+abc
+ABC
+32
