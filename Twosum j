@@ -1,0 +1,36 @@
+import java.util.*;
+class Twosum
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+int t=s.nextInt();
+for(int i=0;i<n-1;i++)
+{
+for(int j=0;j<i+1;j++)
+{
+if(a[i]+a[j]==t)
+{
+System.out.println(i+" "+j);
+return;
+}
+}
+}
+System.out.println("-1");
+}
+}
+
+Output:
+mini@Ts-MacBook-Air javacrt % java Twosum
+5
+3 4 5 6 7
+9
+2 1
+
+
