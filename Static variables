@@ -1,0 +1,27 @@
+import java.util.*;
+class Sample
+{
+int a=10;
+static int b=20;
+}
+class Test5
+{
+public static void main(String args[])
+{
+Sample s1=new Sample();
+System.out.println(s1.a+" "+s1.b);
+Sample s2=new Sample();
+System.out.println(s2.a+" "+s2.b);
+s1.a=888;
+s2.b=999;
+System.out.println(s1.a+" "+s1.b);
+System.out.println(s2.a+" "+s2.b);
+}
+}
+Output:
+mini@Ts-MacBook-Air javacrt % javac Test5.java
+mini@Ts-MacBook-Air javacrt % java Test5      
+10 20
+10 20
+888 999
+10 999
